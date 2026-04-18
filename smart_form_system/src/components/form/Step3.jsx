@@ -1,7 +1,10 @@
 import React from 'react'
+import Card from '../common/Card';
 
 const Step3 = ({ formData }) => {
   return (
+      <Card title="Review Information">
+
     <div>
       <h2 className="text-lg font-semibold mb-4">Review Your Info</h2>
 
@@ -18,6 +21,7 @@ const Step3 = ({ formData }) => {
         Please confirm your details before submitting.
       </p>
     </div>
+      </Card>
   );
 };
 

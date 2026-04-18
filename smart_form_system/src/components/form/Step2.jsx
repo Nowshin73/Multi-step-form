@@ -1,7 +1,11 @@
 import React from 'react'
+import Card from '../common/Card';
+import InputField from '../common/Inputfield';
 
 const Step2 = ({ formData, handleChange, errors }) => {
   return (
+      <Card title="Address Information">
+
     <div className="space-y-4">
       <h2 className="text-lg font-semibold">Details</h2>
 
@@ -23,6 +27,7 @@ const Step2 = ({ formData, handleChange, errors }) => {
         onChange={(e) => handleChange("experience", e.target.value)}
       />
     </div>
+      </Card>
   );
 };
 
